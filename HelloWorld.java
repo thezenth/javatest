@@ -2,7 +2,7 @@ public class HelloWorld {
 
     public static void main(String[] args) {
         Tester aTest = new Tester(22, 33, 44);
-        System.out.println(aTest.giveANumber());
+        Debug.dbg(aTest.giveANumber() + "");
     }
 }
 
@@ -15,9 +15,9 @@ class Tester {
         x = xVal;
         y = yVal;
         z = zVal;
-        System.out.println("X:" + x);
-        System.out.println("Y:" + y);
-        System.out.println("Z:" + z);
+        Debug.dbg("X:" + x);
+        Debug.dbg("Y:" + y);
+        Debug.dbg("Z:" + z);
     }
 
     public int giveANumber() {
